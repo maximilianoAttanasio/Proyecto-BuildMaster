@@ -1,0 +1,92 @@
+@media (min-width: 992px) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* === CSS Header === */
+  .menuBar {
+    display: none;
+  }
+
+  .navbar {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    display: flex;
+    border: none;
+  }
+
+  .navbarLinks {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .navbarLinks li a:hover {
+    background-color: var(--accent-color);
+    color: var(--text);
+    padding: 20px;
+    border-radius: var(--rounded);
+  }
+
+  /* === CSS Hero === */
+  #hero {
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  .heroInfo, .heroImg {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .heroInfo h1 {
+    font-size: var(--font-bg);
+  }
+
+  .heroInfo p {
+    font-size: var(--font-desktop);
+  }
+
+  /* === CSS Populares === */
+
+  /* === CSS Guias === */
+  .imgGuide {
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .guides:nth-of-type(1) .imgGuide {
+    object-position: 72%;
+  }
+
+  .guides:nth-of-type(2) .imgGuide {
+    object-position: 40%;
+  }
+
+  .guides:nth-of-type(3) .imgGuide {
+    object-position: 95%;
+  }
+
+  .guides {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* === CSS Footer === */
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  /* === CSS Register === */
+
+  /* === CSS Login === */
+  .loginOptions {
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
