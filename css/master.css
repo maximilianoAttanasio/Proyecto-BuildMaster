@@ -70,11 +70,12 @@ a {
 .btnPrimary {
   background-color: var(--accent-color);
   color: var(--text);
+  border: 1px solid transparent;
 }
 
 .btnPrimary:hover {
   background-color: var(--background);
-  border: 1px solid var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .btnSecondary {
@@ -162,6 +163,10 @@ a {
 .heroInfo h1 {
   text-align: center;
   font-size: var(--font-md);
+}
+
+.heroInfo p {
+  text-align: center;
 }
 
 .heroImg {
